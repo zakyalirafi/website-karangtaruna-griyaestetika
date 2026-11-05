@@ -1,81 +1,121 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website dokumentasi para pemuda Griya Estetika dalam memeriahkan Hari Kemerdekaan Republik Indonesia.">
 
     <title>Karang Taruna Griya Estetika</title>
 
+    <link rel="icon" type="image/jpeg" href="assets/logo/logo-karang-taruna.jpg">
+
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Google Font -->
+    <!-- Font: Inter (body), Playfair Display (heading), Instrument Serif (aksen italic) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <noscript>
+        <style>.reveal{opacity:1!important;transform:none!important}</style>
+    </noscript>
+
 </head>
 
 <body>
 
     <!-- ================= NAVBAR ================= -->
 
-    <header class="navbar-wrapper">
+    <header class="site-header" id="navbar">
 
-        <nav class="navbar">
+        <div class="header-inner">
 
             <a href="index.html" class="brand">
 
-                <img
-                    src="assets/logo/logo-karang-taruna.png"
-                    alt="Logo Karang Taruna"
-                >
+                <span class="brand-logo" aria-hidden="true">
+                    <img src="assets/logo/logo-karang-taruna.jpg" alt="Logo Karang Taruna">
+                </span>
 
-                <span>
+                <span class="brand-name">
                     Karang Taruna Griya Estetika
                 </span>
 
             </a>
 
 
-            <div class="nav-menu" id="navMenu">
+            <nav class="nav-menu" aria-label="Navigasi utama">
 
-                <a href="index.html" class="nav-link active">
-                    Beranda
-                </a>
+                <a href="index.html" class="nav-link active">Beranda</a>
+                <a href="tentang.html" class="nav-link">Tentang</a>
+                <a href="tim.html" class="nav-link">Tim</a>
+                <a href="galeri.html" class="nav-link">Galeri</a>
 
-                <a href="tentang.html" class="nav-link">
-                    Tentang
-                </a>
+            </nav>
 
-                <a href="tim.html" class="nav-link">
-                    Tim
-                </a>
 
-                <a href="galeri.html" class="nav-link">
+            <div class="header-actions">
+
+                <a href="galeri.html" class="btn">
+                    <i class="fa-regular fa-image" aria-hidden="true"></i>
                     Galeri
+                </a>
+
+
+                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger-lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- MENU MOBILE -->
+
+        <div class="nav-menu-mobile" id="navMenu">
+
+            <div class="inner">
+
+                <a href="index.html" class="mobile-link active" style="--i:0">
+                    Beranda
+                    <span class="link-dot"></span>
+                </a>
+
+                <a href="tentang.html" class="mobile-link" style="--i:1">
+                    Tentang
+                    <span class="link-dot"></span>
+                </a>
+
+                <a href="tim.html" class="mobile-link" style="--i:2">
+                    Tim
+                    <span class="link-dot"></span> 
+                </a>
+
+                <a href="galeri.html" class="mobile-link" style="--i:3">
+                    Galeri
+                    <span class="link-dot"></span>
+                </a>
+
+
+                <a href="galeri.html" class="btn">
+                    <i class="fa-regular fa-image" aria-hidden="true"></i>
+                    Lihat Galeri
                 </a>
 
             </div>
 
-
-            <a href="galeri.html" class="nav-button">
-                <i class="fa-regular fa-image"></i>
-                Galeri
-            </a>
-
-
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-        </nav>
+        </div>
 
     </header>
+
+    <div class="header-space"></div>
 
 
     <!-- ================= MAIN ================= -->
@@ -86,109 +126,498 @@
 
         <section class="hero">
 
-            <div class="hero-content">
+            <div class="container hero-inner">
 
-                <span class="hero-badge">
-                    SELAMAT DATANG DI WEBSITE 
+                <div class="hero-grid">
+
+                    <div class="hero-copy">
+
+                        <div class="reveal" style="--reveal-delay:.05s">
+
+                            <span class="hero-badge">
+                                <span class="ping-dot"></span>
+                                <span class="txt">Selamat Datang di Website</span>
+                            </span>
+
+                        </div>
+
+
+                        <h1 class="reveal" style="--reveal-delay:.15s">
+
+                            <span class="line-1">
+                                <span id="typing-title" data-text="Karang Taruna"></span>
+                            </span>
+
+                            <span class="line-2">
+                                <span class="text-gradient">Griya Estetika</span>
+                            </span>
+
+                        </h1>
+
+
+                        <p class="hero-lead reveal" style="--reveal-delay:.3s">
+                            Satu lingkungan, satu semangat, satu cerita.
+                            Sebuah dokumentasi kebersamaan para pemuda dan warga
+                            Griya Estetika dalam memeriahkan Hari Kemerdekaan
+                            Republik Indonesia.
+                        </p>
+
+
+                        <div class="hero-info reveal" style="--reveal-delay:.4s">
+
+                            <span>
+                                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                                17 Agustus 2026
+                            </span>
+
+                            <a
+                                class="hero-map-link"
+                                href="https://maps.app.goo.gl/LQcTe29wChFe16jc9"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Lihat lokasi Perumahan Griya Estetika di Google Maps"
+                            >
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                Perumahan Griya Estetika
+                                <i class="fa-solid fa-arrow-up-right-from-square hero-map-ext" aria-hidden="true"></i>
+                            </a>
+
+                        </div>
+
+
+                        <div class="hero-buttons reveal" style="--reveal-delay:.5s">
+
+                            <a href="galeri.html" class="btn">
+                                Lihat Kegiatan
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="tentang.html" class="btn">
+                                Hubungi Kami
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- VISUAL KANAN: peta organisasi petugas inti -->
+
+                    <div class="hero-visual reveal--fade reveal" style="--reveal-delay:.4s">
+
+                        <div class="hero-glow"></div>
+
+                        <div class="org-map" role="img"
+                            aria-label="Struktur inti panitia: Alpat Humas di tengah, Galih Ketua, Zaky Wakil Ketua, Faris Sekretaris 2, Alwan Sekretaris 1, Raka Bendahara 1, Rafi Bendahara 2">
+
+                            <!-- garis penghubung -->
+                            <svg class="org-lines" viewBox="0 0 480 400"
+                                fill="none" aria-hidden="true">
+
+                                <path class="org-line" pathLength="100"
+                                    d="M240 185 C195 175 130 130 85 75" style="--d:.3s">
+                                </path>
+                                <path class="org-line" pathLength="100"
+                                    d="M240 185 C285 175 350 130 405 75" style="--d:.4s">
+                                </path>
+                                <path class="org-line" pathLength="100"
+                                    d="M240 185 C200 210 125 250 85 235" style="--d:.5s">
+                                </path>
+                                <path class="org-line" pathLength="100"
+                                    d="M240 185 C280 210 355 250 405 235" style="--d:.6s">
+                                </path>
+                                <path class="org-line" pathLength="100"
+                                    d="M240 185 C215 235 180 295 150 330" style="--d:.7s">
+                                </path>
+                                <path class="org-line" pathLength="100"
+                                    d="M240 185 C265 235 300 295 330 330" style="--d:.8s">
+                                </path>
+
+                                <!-- segmen gelap kecil di sepanjang garis -->
+                                <path class="org-line-dark" pathLength="100"
+                                    d="M240 185 C195 175 130 130 85 75">
+                                </path>
+                                <path class="org-line-dark" pathLength="100"
+                                    d="M240 185 C285 175 350 130 405 75">
+                                </path>
+                                <path class="org-line-dark" pathLength="100"
+                                    d="M240 185 C200 210 125 250 85 235">
+                                </path>
+                                <path class="org-line-dark" pathLength="100"
+                                    d="M240 185 C280 210 355 250 405 235">
+                                </path>
+                                <path class="org-line-dark" pathLength="100"
+                                    d="M240 185 C215 235 180 295 150 330">
+                                </path>
+                                <path class="org-line-dark" pathLength="100"
+                                    d="M240 185 C265 235 300 295 330 330">
+                                </path>
+
+                                <!-- titik gelap di tengah garis -->
+                                <circle class="org-dot" cx="162" cy="147" r="3">
+                                </circle>
+                                <circle class="org-dot" cx="317" cy="147" r="3">
+                                </circle>
+                                <circle class="org-dot" cx="162" cy="225" r="3">
+                                </circle>
+                                <circle class="org-dot" cx="317" cy="225" r="3">
+                                </circle>
+                                <circle class="org-dot" cx="197" cy="263" r="3">
+                                </circle>
+                                <circle class="org-dot" cx="283" cy="263" r="3">
+                                </circle>
+
+                            </svg>
+
+                            <!-- node tengah: Humas -->
+                            <div class="org-node org-node--center"
+                                style="left:50%;top:46.25%;--d:.15s;--bob-delay:0s">
+
+                                <div class="org-avatar">
+                                    <img src="assets/team/alpat.jpeg" alt="Alpat, Humas Panitia" loading="lazy">
+                                </div>
+
+                                <div class="org-label">
+                                    <b>Alpat</b>
+                                    <span class="sep">&bull;</span>
+                                    <span class="role">Humas</span>
+                                </div>
+
+                            </div>
+
+                            <!-- Ketua: pojok kiri atas -->
+                            <div class="org-node"
+                                style="left:17.71%;top:18.75%;--d:.45s;--bob-delay:1.4s">
+
+                                <div class="org-avatar">
+                                    <img src="assets/team/galih.jpeg" alt="Galih, Ketua Panitia" loading="lazy">
+                                </div>
+
+                                <div class="org-label">
+                                    <b>Galih</b>
+                                    <span class="sep">&bull;</span>
+                                    <span class="role">Ketua</span>
+                                </div>
+
+                            </div>
+
+                            <!-- Wakil Ketua: di bawah Ketua -->
+                            <div class="org-node"
+                                style="left:17.71%;top:58.75%;--d:.55s;--bob-delay:2.1s">
+
+                                <div class="org-avatar">
+                                    <img src="assets/team/zaky.jpeg" alt="Zaky, Wakil Ketua Panitia" loading="lazy">
+                                </div>
+
+                                <div class="org-label">
+                                    <b>Zaky</b>
+                                    <span class="sep">&bull;</span>
+                                    <span class="role">Wakil</span>
+                                </div>
+
+                            </div>
+
+                            <!-- Sekretaris 2 -->
+                            <div class="org-node"
+                                style="left:84.38%;top:18.75%;--d:.65s;--bob-delay:2.8s">
+
+                                <div class="org-avatar">
+                                    <img src="assets/team/Faris.jpeg" alt="Faris, Sekretaris 2 Panitia" loading="lazy">
+                                </div>
+
+                                <div class="org-label">
+                                    <b>Faris</b>
+                                    <span class="sep">&bull;</span>
+                                    <span class="role">Sekretaris 2</span>
+                                </div>
+
+                            </div>
+
+                            <!-- Sekretaris 1 -->
+                            <div class="org-node"
+                                style="left:84.38%;top:58.75%;--d:.75s;--bob-delay:3.5s">
+
+                                <div class="org-avatar">
+                                    <img src="assets/team/alwan.jpeg" alt="Alwan, Sekretaris 1 Panitia" loading="lazy">
+                                </div>
+
+                                <div class="org-label">
+                                    <b>Alwan</b>
+                                    <span class="sep">&bull;</span>
+                                    <span class="role">Sekretaris 1</span>
+                                </div>
+
+                            </div>
+
+                            <!-- Bendahara 1 -->
+                            <div class="org-node"
+                                style="left:31.25%;top:82.5%;--d:.85s;--bob-delay:1.8s">
+
+                                <div class="org-avatar">
+                                    <img src="assets/team/raka.jpeg" alt="Raka, Bendahara 1 Panitia" loading="lazy">
+                                </div>
+
+                                <div class="org-label">
+                                    <b>Raka</b>
+                                    <span class="sep">&bull;</span>
+                                    <span class="role">Bendahara 1</span>
+                                </div>
+
+                            </div>
+
+                            <!-- Bendahara 2 -->
+                            <div class="org-node"
+                                style="left:68.75%;top:82.5%;--d:.95s;--bob-delay:2.5s">
+
+                                <div class="org-avatar">
+                                    <img src="assets/team/raptak.jpeg" alt="Rafi, Bendahara 2 Panitia" loading="lazy">
+                                </div>
+
+                                <div class="org-label">
+                                    <b>Rafi</b>
+                                    <span class="sep">&bull;</span>
+                                    <span class="role">Bendahara 2</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BAND TEKS MARQUEE -->
+
+        <section class="text-band" aria-hidden="true">
+
+            <div class="text-band-glow"></div>
+
+            <div class="marquee" data-base="650" data-dir="1" data-pause-hover style="--edge: #F4F4F4">
+                <div class="marquee-track">
+                    <div class="marquee-group">
+                        <span>Zaky</span>
+                        <span>Raka</span>
+                        <span>Rafie</span>
+                        <span>Kinar</span>
+                        <span>Keyla</span>
+                        <span>Alwan</span>
+                        <span>Alpat</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marquee" data-base="650" data-dir="-1" data-pause-hover style="--edge: #F4F4F4">
+                <div class="marquee-track">
+                    <div class="marquee-group">
+                        <span>Galih</span>
+                        <span>Rafi</span>
+                        <span>Aisa</span>
+                        <span>Kia</span>
+                        <span>Abil</span>
+                        <span>Faris</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marquee-edge marquee-edge--left"></div>
+            <div class="marquee-edge marquee-edge--right"></div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section class="section">
+
+            <div class="blob footer-blob-b"></div>
+
+            <div class="container">
+
+                <div class="about-grid">
+
+                    <div class="about-copy reveal reveal--left">
+
+                        <span class="eyebrow">Tentang Kami</span>
+
+                        <h2>
+                            Satu lingkungan,
+                            <em class="text-gradient">satu semangat.</em>
+                        </h2>
+
+
+                        <p>
+                            Kami adalah para pemuda Griya Estetika yang bersama-sama
+                            mengambil bagian dalam kepanitiaan 17 Agustus 2026.
+                            Dengan semangat kebersamaan, kami belajar, bekerja sama,
+                            dan berkontribusi untuk menciptakan kegiatan yang meriah
+                            bagi seluruh warga.
+                        </p>
+
+
+                        <div class="about-cards">
+
+                            <div class="about-card glass-card">
+                                <span class="num">01</span>
+                                <h3>Kepanitiaan 17 Agustus</h3>
+                                <p>
+                                    Para pemuda Griya Estetika bersama mengambil
+                                    bagian dalam kepanitiaan 17 Agustus 2026.
+                                </p>
+                            </div>
+
+                            <div class="about-card glass-card">
+                                <span class="num">02</span>
+                                <h3>Belajar Bekerja Sama</h3>
+                                <p>
+                                    Belajar, bekerja sama, dan berkontribusi
+                                    dengan semangat kebersamaan.
+                                </p>
+                            </div>
+
+                            <div class="about-card glass-card">
+                                <span class="num">03</span>
+                                <h3>Memeriahkan Kemerdekaan</h3>
+                                <p>
+                                    Menciptakan kegiatan yang meriah bagi
+                                    seluruh warga perumahan.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <span class="link-arrow-group">
+                            <a href="tentang.html" class="link-arrow">
+                                Selengkapnya
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </span>
+
+                    </div>
+
+
+                    <div class="photo-panel-wrap reveal reveal--right" data-tilt>
+
+                        <div class="photo-panel-glow"></div>
+
+                        <div class="photo-panel">
+                            <div class="photo-panel-inner">
+                                <img
+                                    src="assets/team/foto panitia bersama 5.jpeg"
+                                    alt="Kebersamaan panitia Griya Estetika"
+                                    loading="lazy"
+                                >
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALERI PREVIEW (MARQUEE FOTO) -->
+
+        <section class="section" style="background: var(--bg-soft);">
+
+            <div class="text-band-glow"></div>
+
+            <div class="container">
+
+                <div class="section-head section-head--center reveal reveal--fade">
+
+                    <span class="eyebrow">Dokumentasi</span>
+
+                    <h2>
+                        Galeri
+                        <em class="text-gradient">Kegiatan</em>
+                    </h2>
+
+
+                    <p>
+                        Momen-momen terbaik dari kegiatan Karang Taruna Griya Estetika.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="photo-band" style="--edge: #F4F4F4">
+
+                <div class="marquee" data-base="750" data-dir="1">
+                    <div class="marquee-track">
+                        <div class="marquee-group">
+                            <img src="assets/team/lomba estafet tepung ibu.jpeg" alt="Lomba estafet tepung ibu-ibu" loading="lazy">
+                            <img src="assets/team/lomba kerupuk.jpeg" alt="Lomba makan kerupuk" loading="lazy">
+                            <img src="assets/team/lomba sepedah hias.jpeg" alt="Lomba hias sepedah" loading="lazy">
+                            <img src="assets/team/foto panitia 3.jpeg" alt="Momen kebersamaan panitia" loading="lazy">
+                            <img src="assets/team/foto rapat.jpeg" alt="Ngobrol bareng panitia" loading="lazy">
+                            <img src="assets/team/penampilan tari anak.jpeg" alt="Penampilan tari anak-anak" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="marquee" data-base="750" data-dir="-1">
+                    <div class="marquee-track">
+                        <div class="marquee-group">
+                            <img src="assets/team/bagi hadiah futsal.jpeg" alt="Pembagian hadiah futsal" loading="lazy">
+                            <img src="assets/team/pembagian doorprize3.jpeg" alt="Pembagian doorprize" loading="lazy">
+                            <img src="assets/team/bagi hadiah ibu.jpeg" alt="Hadiah untuk para pemenang" loading="lazy">
+                            <img src="assets/team/penampilan tari anak2.jpeg" alt="Penampilan tari anak-anak" loading="lazy">
+                            <img src="assets/team/foto panitia bersama 7.jpeg" alt="Kenangan 17 Agustus 2026" loading="lazy">
+                            <img src="assets/team/pembagian doorprize2.jpeg" alt="Pembagian doorprize" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="marquee-edge marquee-edge--left"></div>
+                <div class="marquee-edge marquee-edge--right"></div>
+
+            </div>
+
+
+            <div class="text-center reveal reveal--fade" style="text-align: center; margin-top: 2.5rem;">
+
+                <span class="link-arrow-group">
+                    <a href="galeri.html" class="link-arrow">
+                        Lihat Semua
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
                 </span>
 
-                <h1>
-                    Karang Taruna
-                    <span>Griya Estetika</span>
-                </h1>
-
-                <p>
-                    Satu lingkungan, satu semangat, satu cerita.
-                    Sebuah dokumentasi kebersamaan para pemuda dan warga
-                    Griya Estetika dalam memeriahkan Hari Kemerdekaan
-                    Republik Indonesia.
-                </p>
-
-
-                <div class="hero-info">
-
-                    <span>
-                        <i class="fa-regular fa-calendar"></i>
-                       17 Agustus 2026
-                    </span>
-
-                    <span>
-                        <i class="fa-solid fa-location-dot"></i>
-                        Perumahan Griya Estetika
-                    </span>
-
-                </div>
-
-
-                <div class="hero-buttons">
-
-                    <a href="galeri.html" class="btn-primary">
-                        Lihat Kegiatan
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                    <a href="tentang.html" class="btn-secondary">
-                        Hubungi Kami
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="hero-image">
-
-                <img
-                    src="assets/team/foto panitia bersama.jpeg"
-                    alt="Kegiatan HUT RI"
-                >
-
             </div>
 
         </section>
 
-
-        <!-- INTRO -->
-
-        <section class="intro">
-
-            <div class="section-heading">
-
-                <span>TENTANG KAMI</span>
-
-                <h2>
-                    Satu lingkungan,
-                    <strong>satu semangat.</strong>
-                </h2>
-
-                <p>
-                    Kami adalah para pemuda Griya Estetika yang bersama-sama mengambil bagian dalam kepanitiaan 17 Agustus 2026. 
-                    Dengan semangat kebersamaan, kami belajar, bekerja sama, dan berkontribusi untuk menciptakan kegiatan yang meriah bagi seluruh warga.
-                </p>
-
-                <a href="tentang.html" class="text-link">
-                    Selengkapnya
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </div>
-
-        </section>
 
         <!-- CTA -->
 
-        <section class="home-cta">
+        <section class="cta-section">
 
-            <div>
+            <div class="cta-pattern dot-pattern"></div>
+            <div class="cta-glow"></div>
 
-                <span>
-                    CERITA PANITIA 2026
-                </span>
+
+            <div class="cta-box reveal reveal--fade">
+
+                <span class="eyebrow">Cerita Panitia 2026</span>
 
                 <h2>
-                    Dari Persiapan 
-                    <strong>Menjadi sebuah cerita.</strong>
+                    Dari Persiapan
+                    <em class="text-gradient">Menjadi sebuah cerita.</em>
                 </h2>
+
 
                 <p>
                     17 Agustus 2026 menjadi momen bagi para pemuda
@@ -196,10 +625,19 @@
                     dan menjalankan kepanitiaan bersama.
                 </p>
 
-                <a href="tim.html" class="btn-primary">
-                    KENALI TIM
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+
+                <div class="cta-buttons">
+
+                    <a href="tim.html" class="btn">
+                        Kenali Tim Kami
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="galeri.html" class="btn">
+                        Lihat Galeri
+                    </a>
+
+                </div>
 
             </div>
 
@@ -210,50 +648,92 @@
 
     <!-- ================= FOOTER ================= -->
 
- <footer class="footer">
+    <footer class="site-footer">
 
-    <div class="footer-content">
+        <div class="hairline"></div>
+        <div class="pattern dot-pattern"></div>
+        <div class="footer-blob-a"></div>
+        <div class="footer-blob-b"></div>
 
-        <div class="footer-brand">
 
-            <h3>
-                Karang Taruna Griya Estetika
-            </h3>
+        <div class="footer-inner">
 
-            <p>
-                Satu lingkungan, satu semangat, satu cerita.
-                Website ini menjadi dokumentasi perjalanan para pemuda
-                Griya Estetika dalam mempersiapkan dan memeriahkan
-                kegiatan 17 Agustus 2026 bersama seluruh warga.
+            <div class="footer-grid">
 
-            </p>
+                <div class="footer-brand">
+
+                    <div class="footer-brand-row">
+<span class="brand-logo" aria-hidden="true">
+    <img src="assets/logo/logo-karang-taruna.jpg" alt="Logo Karang Taruna">
+</span>
+
+                        <span class="name">
+                            Karang Taruna Griya Estetika
+                        </span>
+
+                    </div>
+
+
+                    <p class="footer-desc">
+                        Satu lingkungan, satu semangat, satu cerita.
+                        Website ini menjadi dokumentasi perjalanan para pemuda
+                        Griya Estetika dalam mempersiapkan dan memeriahkan
+                        kegiatan 17 Agustus 2026 bersama seluruh warga.
+                    </p>
+
+
+                    <div class="footer-chips">
+
+                        <a href="galeri.html" class="chip">
+                            <i class="fa-regular fa-image" aria-hidden="true"></i>
+                            Lihat Galeri
+                        </a>
+
+                        <a href="tim.html" class="chip">
+                            <i class="fa-solid fa-users" aria-hidden="true"></i>
+                            Kenali Tim
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-col">
+
+                    <h4>Navigasi</h4>
+
+                    <ul>
+
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="tentang.html">Tentang</a></li>
+                        <li><a href="tim.html">Tim</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p class="footer-credit">
+                    © 2026 Karang Taruna Griya Estetika. Design by Zaky
+                </p>
+
+
+                <button class="to-top" id="toTop" aria-label="Kembali ke atas">
+                    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+                </button>
+
+            </div>
 
         </div>
 
+    </footer>
 
-        <div class="footer-nav">
-
-            <span>NAVIGASI</span>
-
-            <a href="index.html">Beranda</a>
-            <a href="tentang.html">Tentang</a>
-            <a href="tim.html">Tim</a>
-            <a href="galeri.html">Galeri</a>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 Karang Taruna Griya Estetika. Design by Zaky
-        </p>
-
-    </div>
-
-</footer>
 
     <script src="js/script.js"></script>
 

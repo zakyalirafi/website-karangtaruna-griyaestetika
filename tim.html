@@ -1,476 +1,407 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kenalan dengan para pemuda di balik kegiatan kemerdekaan Griya Estetika — Panitia 17 Agustus 2026.">
 
-    <title>Tim Panitia | Griya Estetika</title>
+    <title>Tim | Karang Taruna Griya Estetika</title>
+
+    <link rel="icon" type="image/jpeg" href="assets/logo/logo-karang-taruna.jpg">
 
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Font: Inter (body), Playfair Display (heading), Instrument Serif (aksen italic) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <noscript>
+        <style>.reveal{opacity:1!important;transform:none!important}</style>
+    </noscript>
 
 </head>
 
 <body>
 
+    <!-- ================= NAVBAR ================= -->
 
-    <!-- NAVBAR -->
+    <header class="site-header" id="navbar">
 
-    <header class="navbar-wrapper">
-
-        <nav class="navbar">
+        <div class="header-inner">
 
             <a href="index.html" class="brand">
 
-                <img
-                    src="assets/logo/logo-karang-taruna.png"
-                    alt="Logo"
-                >
+                <span class="brand-logo" aria-hidden="true">
+                    <img src="assets/logo/logo-karang-taruna.jpg" alt="Logo Karang Taruna">
+                </span>
 
-                <span>
+                <span class="brand-name">
                     Karang Taruna Griya Estetika
                 </span>
 
             </a>
 
 
-            <div class="nav-menu" id="navMenu">
+            <nav class="nav-menu" aria-label="Navigasi utama">
 
-                <a href="index.html" class="nav-link">
-                    Beranda
-                </a>
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="tentang.html" class="nav-link">Tentang</a>
+                <a href="tim.html" class="nav-link active">Tim</a>
+                <a href="galeri.html" class="nav-link">Galeri</a>
 
-                <a href="tentang.html" class="nav-link">
-                    Tentang
-                </a>
+            </nav>
 
-                <a href="tim.html" class="nav-link active">
-                    Tim
-                </a>
 
-                <a href="galeri.html" class="nav-link">
+            <div class="header-actions">
+
+                <a href="galeri.html" class="btn">
+                    <i class="fa-regular fa-image" aria-hidden="true"></i>
                     Galeri
+                </a>
+
+
+                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger-lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- MENU MOBILE -->
+
+        <div class="nav-menu-mobile" id="navMenu">
+
+            <div class="inner">
+
+                <a href="index.html" class="mobile-link" style="--i:0">
+                    Beranda
+                    <span class="link-dot"></span>
+                </a>
+
+                <a href="tentang.html" class="mobile-link" style="--i:1">
+                    Tentang
+                    <span class="link-dot"></span>
+                </a>
+
+                <a href="tim.html" class="mobile-link active" style="--i:2">
+                    Tim
+                    <span class="link-dot"></span>
+                </a>
+
+                <a href="galeri.html" class="mobile-link" style="--i:3">
+                    Galeri
+                    <span class="link-dot"></span>
+                </a>
+
+
+                <a href="galeri.html" class="btn">
+                    <i class="fa-regular fa-image" aria-hidden="true"></i>
+                    Lihat Galeri
                 </a>
 
             </div>
 
-
-            <a href="galeri.html" class="nav-button">
-                <i class="fa-regular fa-image"></i>
-                Galeri
-            </a>
-
-
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-        </nav>
+        </div>
 
     </header>
 
+    <div class="header-space"></div>
 
-    <main class="page-content">
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
 
 
         <!-- PAGE HERO -->
 
         <section class="page-hero">
 
-            <span>
-                KENALI KAMI
-            </span>
+            <div class="dot-pattern"></div>
+            <div class="radial"></div>
+            <div class="blob page-hero-blob"></div>
 
-            <h1>
-                Panitia 17 Agustus 2026
-            </h1>
 
-            <p>
-                Kenalan dengan para pemuda di balik kegiatan kemerdekaan Griya Estetika
-            </p>
+            <div class="inner reveal reveal--fade">
 
-        </section>
+                <span class="eyebrow">Kenali Kami</span>
 
+                <h1>
+                    Panitia
+                    <em class="text-gradient">17 Agustus</em>
+                    2026
+                </h1>
 
-        <!-- TEAM -->
-
-        <section class="team-page">
-
-            <div class="team-grid">
-
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/galih.jpeg"
-                        alt="Ketua Panitia"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            KETUA PANITIA
-                        </span>
-
-                        <h3>
-                            Galih
-                        </h3>
-
-                    </div>
-
-                </article>
-
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/zaky.jpeg"
-                        alt="Wakil Ketua"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            WAKIL KETUA
-                        </span>
-
-                        <h3>
-                            Zaky
-                        </h3>
-
-                    </div>
-
-                </article>
-
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/alpat.jpeg"
-                        alt="Sekretaris"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            SEKRETARIS
-                        </span>
-
-                        <h3>
-                            Alpat
-                        </h3>
-
-                    </div>
-
-                </article>
-
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/raka.jpeg"
-                        alt="Bendahara"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            BENDAHARA
-                        </span>
-
-                        <h3>
-                            Raka
-                        </h3>
-
-                    </div>
-
-                </article>
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/Faris.jpeg"
-                        alt="Sekretaris"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            ANGGOTA
-                        </span>
-
-                        <h3>
-                            Faris
-                        </h3>
-
-                    </div>
-
-                </article>
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/rafie.jpeg"
-                        alt="Sekretaris"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            ANGGOTA
-                        </span>
-
-                        <h3>
-                            Rafie
-                        </h3>
-
-                    </div>
-
-                </article>
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/alwan.jpeg"
-                        alt="Sekretaris"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            ANGGOTA
-                        </span>
-
-                        <h3>
-                            Alwan
-                        </h3>
-
-                    </div>
-
-                </article>
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/raptak.jpeg"
-                        alt="Sekretaris"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            ANGGOTA
-                        </span>
-
-                        <h3>
-                            Rafi
-                        </h3>
-
-                    </div>
-
-                </article>
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/kinar.jpeg"
-                        alt="Sekretaris"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            ANGGOTA
-                        </span>
-
-                        <h3>
-                            Kinar
-                        </h3>
-
-                    </div>
-
-                </article>
-
-                                <article class="team-card">
-
-                    <img
-                        src="assets/team/quensa.jpeg"
-                        alt="Sekretaris"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            ANGGOTA
-                        </span>
-
-                        <h3>
-                            Quensa
-                        </h3>
-
-                    </div>
-
-                </article>
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/aisa.jpeg"
-                        alt="Sekretaris"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            ANGGOTA
-                        </span>
-
-                        <h3>
-                            Aisah
-                        </h3>
-
-                    </div>
-
-                </article>
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/abil.jpeg"
-                        alt="Sekretaris"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            ANGGOTA
-                        </span>
-
-                        <h3>
-                            Abil
-                        </h3>
-
-                    </div>
-
-                </article>
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/haura.jpeg"
-                        alt="Sekretaris"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            ANGGOTA
-                        </span>
-
-                        <h3>
-                            Haura
-                        </h3>
-
-                    </div>
-
-                </article>
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/fira.jpeg"
-                        alt="Sekretaris"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            ANGGOTA
-                        </span>
-
-                        <h3>
-                            Fira
-                        </h3>
-
-                    </div>
-
-                </article>
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/kia.jpeg"
-                        alt="Sekretaris"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            ANGGOTA
-                        </span>
-
-                        <h3>
-                            Kia
-                        </h3>
-
-                    </div>
-
-                </article>
-
-                <article class="team-card">
-
-                    <img
-                        src="assets/team/keyla.jpeg"
-                        alt="Sekretaris"
-                    >
-
-                    <div class="team-info">
-
-                        <span>
-                            ANGGOTA
-                        </span>
-
-                        <h3>
-                            Keyla
-                        </h3>
-
-                    </div>
-
-                </article>
+                <p>
+                    Kenalan dengan para pemuda di balik kegiatan
+                    kemerdekaan Griya Estetika.
+                </p>
 
             </div>
 
         </section>
 
 
-        <!-- TEAM NOTE -->
+        <!-- TIM: KARTU + SPOTLIGHT -->
 
-        <section class="team-note">
+        <section class="team-strip">
 
-            <div>
+            <div class="spotwrap" id="teamSpot" style="--r: 200px;">
 
-                <span>
-                    PANITIA 17 AGUSTUS 2026
-                </span>
+                <!-- PENGURUS -->
 
-                <h2>
-                    Terima kasih sudah 
-                    <strong>menjadi bagian dari cerita ini</strong>
-                </h2>
+                <article class="team-tint" style="--grad: linear-gradient(165deg, #262626, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/galih.jpeg" alt="Galih — Ketua Panitia" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Galih</h3>
+                        <span class="role">Ketua Panitia</span>
+                    </div>
+                </article>
+
+
+                <article class="team-tint" style="--grad: linear-gradient(145deg, #3F3F46, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/zaky.jpeg" alt="Zaky — Wakil Ketua" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Zaky</h3>
+                        <span class="role">Wakil Ketua</span>
+                    </div>
+                </article>
+
+
+                <article class="team-tint" style="--grad: linear-gradient(210deg, #1C1C1C, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/alpat.jpeg" alt="Alpat — Sekretaris" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Alpat</h3>
+                        <span class="role">Sekretaris</span>
+                    </div>
+                </article>
+
+
+                <article class="team-tint" style="--grad: linear-gradient(195deg, #52525B, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/raka.jpeg" alt="Raka — Bendahara" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Raka</h3>
+                        <span class="role">Bendahara</span>
+                    </div>
+                </article>
+
+
+                <!-- ANGGOTA -->
+
+                <article class="team-tint" style="--grad: linear-gradient(225deg, #262626, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/Faris.jpeg" alt="Faris — Anggota" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Faris</h3>
+                        <span class="role">Anggota</span>
+                    </div>
+                </article>
+
+
+                <article class="team-tint" style="--grad: linear-gradient(165deg, #1C1C1C, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/rafie.jpeg" alt="Rafie — Anggota" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Rafie</h3>
+                        <span class="role">Anggota</span>
+                    </div>
+                </article>
+
+
+                <article class="team-tint" style="--grad: linear-gradient(210deg, #3F3F46, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/alwan.jpeg" alt="Alwan — Anggota" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Alwan</h3>
+                        <span class="role">Anggota</span>
+                    </div>
+                </article>
+
+
+                <article class="team-tint" style="--grad: linear-gradient(195deg, #52525B, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/raptak.jpeg" alt="Rafi — Anggota" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Rafi</h3>
+                        <span class="role">Anggota</span>
+                    </div>
+                </article>
+
+
+                <article class="team-tint" style="--grad: linear-gradient(145deg, #262626, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/kinar.jpeg" alt="Kinar — Anggota" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Kinar</h3>
+                        <span class="role">Anggota</span>
+                    </div>
+                </article>
+
+
+                <article class="team-tint" style="--grad: linear-gradient(225deg, #1C1C1C, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/quensa.jpeg" alt="Quensa — Anggota" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Quensa</h3>
+                        <span class="role">Anggota</span>
+                    </div>
+                </article>
+
+
+                <article class="team-tint" style="--grad: linear-gradient(165deg, #3F3F46, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/aisa.jpeg" alt="Aisah — Anggota" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Aisah</h3>
+                        <span class="role">Anggota</span>
+                    </div>
+                </article>
+
+
+                <article class="team-tint" style="--grad: linear-gradient(210deg, #262626, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/abil.jpeg" alt="Abil — Anggota" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Abil</h3>
+                        <span class="role">Anggota</span>
+                    </div>
+                </article>
+
+
+                <article class="team-tint" style="--grad: linear-gradient(195deg, #1C1C1C, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/haura.jpeg" alt="Haura — Anggota" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Haura</h3>
+                        <span class="role">Anggota</span>
+                    </div>
+                </article>
+
+
+                <article class="team-tint" style="--grad: linear-gradient(145deg, #52525B, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/fira.jpeg" alt="Fira — Anggota" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Fira</h3>
+                        <span class="role">Anggota</span>
+                    </div>
+                </article>
+
+
+                <article class="team-tint" style="--grad: linear-gradient(225deg, #3F3F46, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/kia.jpeg" alt="Kia — Anggota" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Kia</h3>
+                        <span class="role">Anggota</span>
+                    </div>
+                </article>
+
+
+                <article class="team-tint" style="--grad: linear-gradient(165deg, #262626, #0F0F0F)">
+                    <div class="team-tint-photo">
+                        <img src="assets/team/keyla.jpeg" alt="Keyla — Anggota" loading="lazy">
+                    </div>
+                    <div class="team-tint-info">
+                        <h3>Keyla</h3>
+                        <span class="role">Anggota</span>
+                    </div>
+                </article>
+
+            </div>
+
+
+            <div class="team-hint reveal reveal--fade">
+
+                <span class="line line-a"></span>
 
                 <p>
-                    Terima kasih untuk seluruh panitia yang sudah meluangkan waktu, tenaga, dan pikiran selama kegiatan 17 Agustus 2026. 
-                    Setiap peran, kerja sama, dan momen yang kita lalui menjadi bagian dari cerita yang akan selalu dikenang.
+                    Arahkan kursor untuk
+                    <br>
+                    mengungkap warna — klik foto
+                    <br>
+                    untuk menandai anggota tim
                 </p>
+
+
+                <span class="line line-b"></span>
+
+            </div>
+
+        </section>
+
+
+        <!-- UCAPAN TERIMA KASIH -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="team-note reveal reveal--fade">
+
+                    <div class="inner">
+
+                        <span class="eyebrow">Panitia 17 Agustus 2026</span>
+
+                        <h2>
+                            Terima kasih sudah
+                            <span class="text-gradient">menjadi bagian dari cerita ini</span>
+                        </h2>
+
+
+                        <p>
+                            Terima kasih untuk seluruh panitia yang sudah meluangkan
+                            waktu, tenaga, dan pikiran selama kegiatan 17 Agustus 2026.
+                            Setiap peran, kerja sama, dan momen yang kita lalui menjadi
+                            bagian dari cerita yang akan selalu dikenang.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="cta-buttons" style="margin-top: 2.5rem; display: flex; justify-content: center;">
+
+                    <a href="galeri.html" class="btn">
+                        Lihat Galeri
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="tentang.html" class="btn">
+                        Tentang Kami
+                    </a>
+
+                </div>
 
             </div>
 
@@ -479,50 +410,93 @@
     </main>
 
 
-<footer class="footer">
+    <!-- ================= FOOTER ================= -->
 
-    <div class="footer-content">
+    <footer class="site-footer">
 
-        <div class="footer-brand">
+        <div class="hairline"></div>
+        <div class="pattern dot-pattern"></div>
+        <div class="footer-blob-a"></div>
+        <div class="footer-blob-b"></div>
 
-            <h3>
-                Karang Taruna Griya Estetika
-            </h3>
 
-            <p>
-                Satu lingkungan, satu semangat, satu cerita.
-                Website ini menjadi dokumentasi perjalanan para pemuda
-                Griya Estetika dalam mempersiapkan dan memeriahkan
-                kegiatan 17 Agustus 2026 bersama seluruh warga.
+        <div class="footer-inner">
 
-            </p>
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <div class="footer-brand-row">
+<span class="brand-logo" aria-hidden="true">
+    <img src="assets/logo/logo-karang-taruna.jpg" alt="Logo Karang Taruna">
+</span>
+
+                        <span class="name">
+                            Karang Taruna Griya Estetika
+                        </span>
+
+                    </div>
+
+
+                    <p class="footer-desc">
+                        Satu lingkungan, satu semangat, satu cerita.
+                        Website ini menjadi dokumentasi perjalanan para pemuda
+                        Griya Estetika dalam mempersiapkan dan memeriahkan
+                        kegiatan 17 Agustus 2026 bersama seluruh warga.
+                    </p>
+
+
+                    <div class="footer-chips">
+
+                        <a href="galeri.html" class="chip">
+                            <i class="fa-regular fa-image" aria-hidden="true"></i>
+                            Lihat Galeri
+                        </a>
+
+                        <a href="tim.html" class="chip">
+                            <i class="fa-solid fa-users" aria-hidden="true"></i>
+                            Kenali Tim
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-col">
+
+                    <h4>Navigasi</h4>
+
+                    <ul>
+
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="tentang.html">Tentang</a></li>
+                        <li><a href="tim.html">Tim</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p class="footer-credit">
+                    © 2026 Karang Taruna Griya Estetika. Design by Zaky
+                </p>
+
+
+                <button class="to-top" id="toTop" aria-label="Kembali ke atas">
+                    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+                </button>
+
+            </div>
 
         </div>
 
-
-        <div class="footer-nav">
-
-            <span>NAVIGASI</span>
-
-            <a href="index.html">Beranda</a>
-            <a href="tentang.html">Tentang</a>
-            <a href="tim.html">Tim</a>
-            <a href="galeri.html">Galeri</a>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 Karang Taruna Griya Estetika. Design by Zaky
-        </p>
-
-    </div>
-
- </footer>
+    </footer>
 
 
     <script src="js/script.js"></script>

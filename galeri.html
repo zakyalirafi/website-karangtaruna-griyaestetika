@@ -1,462 +1,582 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kumpulan momen kegiatan Karang Taruna Griya Estetika — foto dan video dokumentasi 17 Agustus 2026.">
 
-    <title>Galeri | Griya Estetika</title>
+    <title>Galeri | Karang Taruna Griya Estetika</title>
+
+    <link rel="icon" type="image/jpeg" href="assets/logo/logo-karang-taruna.jpg">
 
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Font: Inter (body), Playfair Display (heading), Instrument Serif (aksen italic) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <noscript>
+        <style>.reveal{opacity:1!important;transform:none!important}</style>
+    </noscript>
 
 </head>
 
 <body>
 
+    <!-- ================= NAVBAR ================= -->
 
-    <!-- NAVBAR -->
+    <header class="site-header" id="navbar">
 
-    <header class="navbar-wrapper">
-
-        <nav class="navbar">
+        <div class="header-inner">
 
             <a href="index.html" class="brand">
 
-                <img
-                    src="assets/logo/logo-karang-taruna.png"
-                    alt="Logo"
-                >
+                <span class="brand-logo" aria-hidden="true">
+                    <img src="assets/logo/logo-karang-taruna.jpg" alt="Logo Karang Taruna">
+                </span>
 
-                <span>
+                <span class="brand-name">
                     Karang Taruna Griya Estetika
                 </span>
 
             </a>
 
 
-            <div class="nav-menu" id="navMenu">
+            <nav class="nav-menu" aria-label="Navigasi utama">
 
-                <a href="index.html" class="nav-link">
-                    Beranda
-                </a>
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="tentang.html" class="nav-link">Tentang</a>
+                <a href="tim.html" class="nav-link">Tim</a>
+                <a href="galeri.html" class="nav-link active">Galeri</a>
 
-                <a href="tentang.html" class="nav-link">
-                    Tentang
-                </a>
+            </nav>
 
-                <a href="tim.html" class="nav-link">
-                    Tim
-                </a>
 
-                <a href="galeri.html" class="nav-link active">
+            <div class="header-actions">
+
+                <a href="galeri.html" class="btn">
+                    <i class="fa-regular fa-image" aria-hidden="true"></i>
                     Galeri
+                </a>
+
+
+                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger-lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- MENU MOBILE -->
+
+        <div class="nav-menu-mobile" id="navMenu">
+
+            <div class="inner">
+
+                <a href="index.html" class="mobile-link" style="--i:0">
+                    Beranda
+                    <span class="link-dot"></span>
+                </a>
+
+                <a href="tentang.html" class="mobile-link" style="--i:1">
+                    Tentang
+                    <span class="link-dot"></span>
+                </a>
+
+                <a href="tim.html" class="mobile-link" style="--i:2">
+                    Tim
+                    <span class="link-dot"></span>
+                </a>
+
+                <a href="galeri.html" class="mobile-link active" style="--i:3">
+                    Galeri
+                    <span class="link-dot"></span>
+                </a>
+
+
+                <a href="galeri.html" class="btn">
+                    <i class="fa-regular fa-image" aria-hidden="true"></i>
+                    Lihat Galeri
                 </a>
 
             </div>
 
-
-            <a href="galeri.html" class="nav-button">
-                <i class="fa-regular fa-image"></i>
-                Galeri
-            </a>
-
-
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-        </nav>
+        </div>
 
     </header>
 
+    <div class="header-space"></div>
 
-    <main class="page-content">
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
 
 
         <!-- PAGE HERO -->
 
         <section class="page-hero">
 
-            <span>
-                DOKUMENTASI
-            </span>
+            <div class="dot-pattern"></div>
+            <div class="radial"></div>
+            <div class="blob page-hero-blob"></div>
 
-            <h1>
-                Galeri Kegiatan
-            </h1>
 
-            <p>
-                Kumpulan Momen Kegiatan Karang Taruna Griya Estetika Foto dan Video
-            </p>
+            <div class="inner reveal reveal--fade">
+
+                <span class="eyebrow">Dokumentasi</span>
+
+                <h1>
+                    Galeri
+                    <em class="text-gradient">Kegiatan</em>
+                </h1>
+
+                <p>
+                    Kumpulan momen kegiatan Karang Taruna Griya Estetika — foto dan video.
+                </p>
+
+            </div>
 
         </section>
 
 
-        <!-- GALLERY -->
+        <!-- GALERI -->
 
-        <section class="gallery-page">
+        <section class="section" style="padding-top: 1rem;">
 
-            <div class="gallery-grid">
+            <div class="container">
 
+                <div class="gallery-grid reveal reveal--fade">
 
-    <div class="gallery-item gallery-video">
+                    <div class="gallery-item">
 
-        <video controls playsinline>
-            <source src="assets/video/pembukaan rt.mp4" type="video/mp4">
-            Browser kamu tidak mendukung video.
-        </video>
+                        <img
+                            src="assets/team/lomba estafet tepung ibu.jpeg"
+                            alt="Lomba estafet tepung ibu-ibu"
+                            loading="lazy"
+                        >
 
-        <div class="gallery-caption">
+                        <div class="gallery-caption">
+                            <span class="tag">Perlombaan</span>
+                            <h3>Lomba Estafet Tepung Ibu-Ibu</h3>
+                            <p>
+                                Keseruan ibu-ibu mengikuti lomba estafet tepung dengan penuh semangat
+                            </p>
+                        </div>
 
-            <h3>Pembukaan Malam Acara Puncak</h3>
-
-            <span>PEMBUKAAN</span>
-
-            <p>Sambutan Ketua RT sebelum acara dimulai</p>
-
-        </div>
-
-    </div>
-        <div class="gallery-item gallery-video">
-
-            <video controls>
-                <source src="assets/video/pembukaan ketua panitia.mp4" type="video/mp4">
-            </video>
-
-            <div class="gallery-caption">
-
-                <h3>Pembukaan Malam Acara Puncak</h3>
-
-                <span>PEMBUKAAN</span>
-
-                <p>Sambutan Ketua Panitia sebelum acara dimulai </p>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="gallery-item">
-
-            <img
-            src="assets/team/foto panitia bersama 5.jpeg"
-            alt="Lomba 17 Agustus 4"
-            >
-
-            <div class="gallery-caption">
-                <h3>Foto Bersama Pak Lurah</h3>
-
-                <span>KEBERSAMAAN</span>
-
-                <p>Momen kebersamaan panitia bersama Pak Lurah Karanggan dalam acara 17 Agustus 2026</p>
-            </div>
-
-        </div>
-
-                 <div class="gallery-item">
-
-                    <img
-                        src="assets/team/foto panitia bersama 6.jpeg"
-                        alt="Lomba 17 Agustus 4"
-                    >
-
-                    <div class="gallery-caption">
-                            <h3>Momen Setelah Acara</h3>
-
-                            <span>KEBERSAMAAN</span>
-
-                            <p>Menutup malam acara puncak dengan kebersamaan seluruh panitia</p>
                     </div>
 
-                </div>
 
+                    <div class="gallery-item">
 
-                <div class="gallery-item">
+                        <img
+                            src="assets/team/lomba mewarnai balita.jpeg"
+                            alt="Lomba mewarnai balita"
+                            loading="lazy"
+                        >
 
-                    <img
-                        src="assets/team/foto panitia 3.jpeg"
-                        alt="Lomba 17 Agustus 4"
-                    >
+                        <div class="gallery-caption">
+                            <span class="tag">Perlombaan</span>
+                            <h3>Lomba Mewarnai Balita</h3>
+                            <p>
+                                Keseruan si kecil menyalurkan kreativitas lewat lomba mewarnai
+                            </p>
+                        </div>
 
-                    <div class="gallery-caption">
-                            <h3>Momen Setelah Acara</h3>
-
-                            <span>KEBERSAMAAN</span>
-
-                            <p>Menutup malam acara puncak dengan kebersamaan seluruh panitia</p>
                     </div>
 
-                </div>
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/lomba kerupuk.jpeg"
+                            alt="Lomba makan kerupuk"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Perlombaan</span>
+                            <h3>Lomba Makan Kerupuk</h3>
+                            <p>
+                                Salah satu lomba sederhana yang selalu seru dan bikin warga ikut tertawa bersama
+                            </p>
+                        </div>
+
+                    </div>
 
 
-                <div class="gallery-item">
+                    <div class="gallery-item">
 
-                    <img
-                        src="assets/team/foto rapat.jpeg"
-                        alt="Lomba 17 Agustus 5"
-                    >
+                        <img
+                            src="assets/team/lomba sepedah hias.jpeg"
+                            alt="Lomba hias sepedah"
+                            loading="lazy"
+                        >
 
-                    <div class="gallery-caption">
+                        <div class="gallery-caption">
+                            <span class="tag">Perlombaan</span>
+                            <h3>Lomba Hias Sepedah</h3>
+                            <p>
+                                Kreativitas warga dalam memeriahkan rangkaian 17 Agustus 2026
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/foto panitia 3.jpeg"
+                            alt="Momen setelah acara"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Kebersamaan</span>
+                            <h3>Momen Setelah Acara</h3>
+                            <p>
+                                Menutup malam acara puncak dengan kebersamaan seluruh panitia
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/foto rapat.jpeg"
+                            alt="Ngobrol bareng panitia"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Kebersamaan</span>
                             <h3>Ngobrol Bareng Panitia</h3>
+                            <p>
+                                Momen sederhana saat berkumpul, berbagi cerita, dan membahas persiapan kegiatan bersama
+                            </p>
+                        </div>
 
-                            <span>KEBERSAMAAN</span>
+                    </div>
 
-                            <p>Momen sederhana saat berkumpul, berbagi cerita, dan membahas persiapan kegiatan bersama</p>
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/penampilan tari anak.jpeg"
+                            alt="Penampilan tari anak-anak"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Hiburan</span>
+                            <h3>Penampilan Tari Anak-Anak</h3>
+                            <p>
+                                Penampilan tari anak-anak yang ikut memeriahkan malam puncak
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/penampilan tari anak2.jpeg"
+                            alt="Penampilan tari anak-anak"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Hiburan</span>
+                            <h3>Penampilan Tari Anak-Anak</h3>
+                            <p>
+                                Penampilan tari anak-anak yang ikut memeriahkan malam puncak
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/pembagian doorprize3.jpeg"
+                            alt="Momen pembagian doorprize"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Doorprize</span>
+                            <h3>Momen Pembagian Doorprize</h3>
+                            <p>
+                                Hadiah dibagikan untuk warga yang beruntung setelah mengikuti rangkaian kegiatan
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/pembagian doorprize2.jpeg"
+                            alt="Momen pembagian doorprize"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Doorprize</span>
+                            <h3>Momen Pembagian Doorprize</h3>
+                            <p>
+                                Hadiah dibagikan untuk warga yang beruntung setelah mengikuti rangkaian kegiatan 17 Agustus
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/pembagian doorprize.jpeg"
+                            alt="Pembagian doorprize"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Doorprize</span>
+                            <h3>Pembagian Doorprize</h3>
+                            <p>
+                                Momen warga menantikan nomor undian yang beruntung di malam puncak
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/pembagian dooprize4.jpeg"
+                            alt="Pembagian doorprize"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Doorprize</span>
+                            <h3>Pembagian Doorprize</h3>
+                            <p>
+                                Keseruan warga menyambut hadiah doorprize setelah rangkaian kegiatan
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/bagi hadiah ibu.jpeg"
+                            alt="Hadiah untuk para pemenang"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Estafet Ibu-Ibu</span>
+                            <h3>Hadiah Untuk Para Pemenang</h3>
+                            <p>
+                                Pembagian hadiah untuk para pemenang lomba estafet ibu-ibu di malam puncak
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/bagi hadiah futsal.jpeg"
+                            alt="Hadiah untuk para pemenang"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Futsal</span>
+                            <h3>Hadiah Untuk Para Pemenang</h3>
+                            <p>
+                                Pembagian hadiah untuk para pemenang lomba futsal di malam puncak
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- VIDEO -->
+
+                    <div class="gallery-item gallery-video">
+
+                        <video controls playsinline>
+                            <source src="assets/video/dokumentasi kegiatan lomba.mp4" type="video/mp4">
+                            Browser kamu tidak mendukung video.
+                        </video>
+
+                        <div class="gallery-caption">
+                            <span class="tag">Perlombaan</span>
+                            <h3>Keseruan Hari Perlombaan</h3>
+                            <p>
+                                Rekaman keseruan warga dan panitia selama rangkaian perlombaan 17 Agustus 2026
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- VIDEO PEMBUKAAN -->
+
+                    <div class="gallery-item gallery-video">
+
+                        <video controls playsinline>
+                            <source src="assets/video/pembukaan ketua panitia.mp4" type="video/mp4">
+                            Browser kamu tidak mendukung video.
+                        </video>
+
+                        <div class="gallery-caption">
+                            <span class="tag">Pembukaan</span>
+                            <h3>Sambutan Ketua Panitia</h3>
+                            <p>
+                                Sambutan ketua panitia membuka rangkaian acara malam puncak 17 Agustus 2026
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item gallery-video">
+
+                        <video controls playsinline>
+                            <source src="assets/video/pembukaan rt.mp4" type="video/mp4">
+                            Browser kamu tidak mendukung video.
+                        </video>
+
+                        <div class="gallery-caption">
+                            <span class="tag">Pembukaan</span>
+                            <h3>Sambutan Ketua RT</h3>
+                            <p>
+                                Peresmian acara malam puncak 17 Agustus 2026 bersama ketua RT
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/foto panitia bersama 7.jpeg"
+                            alt="Kenangan 17 Agustus 2026"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Dokumentasi</span>
+                            <h3>Kenangan 17 Agustus 2026</h3>
+                            <p>
+                                Salah satu kenangan dari perjalanan panitia dan warga Griya Estetika
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/foto panitia 4.jpeg"
+                            alt="Momen kebersamaan panitia"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Kebersamaan</span>
+                            <h3>Momen Kebersamaan Panitia</h3>
+                            <p>
+                                Dokumentasi bersama panitia setelah seluruh rangkaian kegiatan selesai
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/foto panitia bersama 6.jpeg"
+                            alt="Kenangan 17 Agustus 2026"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Dokumentasi</span>
+                            <h3>Kenangan 17 Agustus 2026</h3>
+                            <p>
+                                Salah satu kenangan dari perjalanan panitia dan warga Griya Estetika
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/foto panitia bersama.jpeg"
+                            alt="Foto bersama panitia"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Dokumentasi</span>
+                            <h3>Foto Bersama Panitia</h3>
+                            <p>
+                                Kenangan kebersamaan panitia Griya Estetika yang selalu dikenang
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item">
+
+                        <img
+                            src="assets/team/foto panitia bersama 8.jpeg"
+                            alt="Kenangan 17 Agustus 2026"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-caption">
+                            <span class="tag">Dokumentasi</span>
+                            <h3>Kenangan 17 Agustus 2026</h3>
+                            <p>
+                                Salah satu kenangan dari perjalanan panitia dan warga Griya Estetika
+                            </p>
+                        </div>
+
                     </div>
 
                 </div>
-
-
-                <div class="gallery-item">
-
-                    <img
-                        src="assets/team/penampilan tari anak.jpeg"
-                        alt="Lomba 17 Agustus 6"
-                    >
-
-                    <div class="gallery-caption">
-                        <h3>Penampilan Tari Anak-Anak</h3>
-
-                        <span>HIBURAN</span>
-
-                        <p>Penampilan tari anak-anak yang ikut memeriahkan malam puncak</p>
-                    </div>
-
-                </div>
-
-                <div class="gallery-item">
-
-                    <img
-                        src="assets/team/penampilan tari anak2.jpeg"
-                        alt="Lomba 17 Agustus 6"
-                    >
-
-                    <div class="gallery-caption">
-                        <h3>Penampilan Tari Anak-Anak</h3>
-
-                        <span>HIBURAN</span>
-
-                        <p>Penampilan tari anak-anak yang ikut memeriahkan malam puncak</p>
-                    </div>
-
-                </div>
-
-                <!-- CARD 10 -->
-                <div class="gallery-item">
-
-                    <img
-                        src="assets/team/pembagian doorprize3.jpeg"
-                        alt="Dokumentasi 17 Agustus 2026"
-                    >
-
-                    <div class="gallery-caption">
-                        <h3>Momen Pembagian Doorprize</h3>
-
-                        <span>DOORPRIZE</span>
-
-                        <p>
-                            Hadiah dibagikan untuk warga yang beruntung setelah mengikuti rangkaian kegiatan
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <!-- CARD 11 -->
-                <div class="gallery-item">
-
-                    <img
-                        src="assets/team/pembagian doorprize2.jpeg"
-                        alt="Dokumentasi 17 Agustus 2026"
-                    >
-
-                    <div class="gallery-caption">
-                        <h3>Momen Pembagian Doorprize</h3>
-
-                        <span>DOORPRIZE</span>
-
-                        <p>
-                            Hadiah dibagikan untuk warga yang beruntung setelah mengikuti rangkaian kegiatan 17 Agustus
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <!-- CARD 12 -->
-                <div class="gallery-item">
-
-                    <img
-                        src="assets/team/lomba estafet tepung ibu.jpeg"
-                        alt="Dokumentasi 17 Agustus 2026"
-                    >
-
-                    <div class="gallery-caption">
-                        <h3>Lomba Estafet Tepung Ibu-Ibu</h3>
-
-                        <span>PERLOMBAAN</span>
-
-                        <p>
-                            Keseruan ibu-ibu mengikuti lomba estafet tepung dengan penuh semangat
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <!-- CARD 13 -->
-                <div class="gallery-item">
-
-                    <img
-                        src="assets/team/bagi hadiah ibu.jpeg"
-                        alt="Dokumentasi 17 Agustus 2026"
-                    >
-
-                    <div class="gallery-caption">
-                        <h3>Hadiah Untuk Para Pemenang</h3>
-
-                        <span>ESTAFET IBU-IBU</span>
-
-                        <p>
-                            Pembagian hadiah untuk para pemenang lomba estafet ibu-ibu di malam puncak
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <!-- CARD 14 -->
-                <div class="gallery-item">
-
-                    <img
-                        src="assets/team/bagi hadiah futsal.jpeg"
-                        alt="Dokumentasi 17 Agustus 2026"
-                    >
-
-                    <div class="gallery-caption">
-                        <h3>Hadiah Untuk Para Pemenang</h3>
-
-                        <span>FUTSAL</span>
-
-                        <p>
-                            Pembagian hadiah untuk para pemenang lomba futsal di malam puncak
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <!-- CARD 15 -->
-                <div class="gallery-item">
-
-                    <img
-                        src="assets/team/lomba kerupuk.jpeg"
-                        alt="Dokumentasi 17 Agustus 2026"
-                    >
-
-                    <div class="gallery-caption">
-                        <h3>Lomba Makan Kerupuk</h3>
-
-                        <span>PERLOMBAAN</span>
-
-                        <p>
-                            Salah satu lomba sederhana yang selalu seru dan bikin warga ikut tertawa bersama
-                        </p>
-                    </div>
-
-                </div>
-
-
-            <div class="gallery-item gallery-video">
-
-                <video controls playsinline>
-                    <source src="assets/video/dokumentasi kegiatan lomba.mp4" type="video/mp4">
-                    Browser kamu tidak mendukung video.
-                </video>
-
-                <div class="gallery-caption">
-
-                    <h3>Keseruan Hari Perlombaan</h3>
-
-                    <span>PERLOMBAAN</span>
-
-                    <p>Rekaman keseruan warga dan panitia selama rangkaian perlombaan 17 Agustus 2026</p>
-
-                </div>
-
-            </div>
-
-
-                <!-- CARD 17 -->
-                <div class="gallery-item">
-
-                    <img
-                        src="assets/team/foto panitia bersama 7.jpeg"
-                        alt="Dokumentasi 17 Agustus 2026"
-                    >
-
-                    <div class="gallery-caption">
-                        <h3>Kenangan 17 Agustus 2026</h3>
-
-                        <span>DOKUMENTASI</span>
-
-                        <p>
-                            Salah satu kenangan dari perjalanan panitia dan warga Griya Estetika
-                        </p>
-                    </div>
-
-                </div>
-
-                  <!-- CARD 17 -->
-                <div class="gallery-item">
-
-                    <img
-                        src="assets/team/foto panitia bersama 8.jpeg"
-                        alt="Dokumentasi 17 Agustus 2026"
-                    >
-
-                    <div class="gallery-caption">
-                        <h3>Kenangan 17 Agustus 2026</h3>
-
-                        <span>DOKUMENTASI</span>
-
-                        <p>
-                            Salah satu kenangan dari perjalanan panitia dan warga Griya Estetika
-                        </p>
-                    </div>
-
-                </div>
-
-                  <!-- CARD 17 -->
-                <div class="gallery-item">
-
-                    <img
-                        src="assets/team/penampilan tari anak2.jpeg"
-                        alt="Dokumentasi 17 Agustus 2026"
-                    >
-
-                    <div class="gallery-caption">
-                        <h3>Kenangan 17 Agustus 2026</h3>
-
-                        <span>DOKUMENTASI</span>
-
-                        <p>
-                            Salah satu kenangan dari perjalanan panitia dan warga Griya Estetika
-                        </p>
-                    </div>
-
-                </div>
-
 
             </div>
 
@@ -469,7 +589,7 @@
 
     <div class="lightbox" id="lightbox">
 
-        <button id="closeLightbox">
+        <button id="closeLightbox" aria-label="Tutup">
             <i class="fa-solid fa-xmark"></i>
         </button>
 
@@ -482,51 +602,93 @@
     </div>
 
 
- <footer class="footer">
+    <!-- ================= FOOTER ================= -->
 
-    <div class="footer-content">
+    <footer class="site-footer">
 
-        <div class="footer-brand">
+        <div class="hairline"></div>
+        <div class="pattern dot-pattern"></div>
+        <div class="footer-blob-a"></div>
+        <div class="footer-blob-b"></div>
 
-            <h3>
-                Karang Taruna Griya Estetika
-            </h3>
 
-            <p>
-                Satu lingkungan, satu semangat, satu cerita.
-                Website ini menjadi dokumentasi perjalanan para pemuda
-                Griya Estetika dalam mempersiapkan dan memeriahkan
-                kegiatan 17 Agustus 2026 bersama seluruh warga.
+        <div class="footer-inner">
 
-            </p>
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <div class="footer-brand-row">
+<span class="brand-logo" aria-hidden="true">
+    <img src="assets/logo/logo-karang-taruna.jpg" alt="Logo Karang Taruna">
+</span>
+
+                        <span class="name">
+                            Karang Taruna Griya Estetika
+                        </span>
+
+                    </div>
+
+
+                    <p class="footer-desc">
+                        Satu lingkungan, satu semangat, satu cerita.
+                        Website ini menjadi dokumentasi perjalanan para pemuda
+                        Griya Estetika dalam mempersiapkan dan memeriahkan
+                        kegiatan 17 Agustus 2026 bersama seluruh warga.
+                    </p>
+
+
+                    <div class="footer-chips">
+
+                        <a href="tim.html" class="chip">
+                            <i class="fa-solid fa-users" aria-hidden="true"></i>
+                            Kenali Tim
+                        </a>
+
+                        <a href="tentang.html" class="chip">
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                            Tentang Kami
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-col">
+
+                    <h4>Navigasi</h4>
+
+                    <ul>
+
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="tentang.html">Tentang</a></li>
+                        <li><a href="tim.html">Tim</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p class="footer-credit">
+                    © 2026 Karang Taruna Griya Estetika. Design by Zaky
+                </p>
+
+
+                <button class="to-top" id="toTop" aria-label="Kembali ke atas">
+                    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+                </button>
+
+            </div>
 
         </div>
 
-
-        <div class="footer-nav">
-
-            <span>NAVIGASI</span>
-
-            <a href="index.html">Beranda</a>
-            <a href="tentang.html">Tentang</a>
-            <a href="tim.html">Tim</a>
-            <a href="galeri.html">Galeri</a>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 Karang Taruna Griya Estetika. Design by Zaky
-        </p>
-
-    </div>
-
- </footer>
-
+    </footer>
 
 
     <script src="js/script.js"></script>
